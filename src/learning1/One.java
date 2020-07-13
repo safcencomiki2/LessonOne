@@ -1,24 +1,40 @@
 package learning1;
 
+import java.util.Scanner;
+
 public class One {
 	public static void main(String[] args) {
 		
-		int k; // number occurrences 
-		int[] arr = {1,2,3,3,3,1,8};
+		int[] arr;
 		
-		
-		for (int j = 0; j < arr.length; j++) {
-			k = 0;
-			for (int i = 0; i < arr.length; i++) {
-				if (arr[j] == arr[i])
-				k += 1;	
-				System.out.println("The element " + arr[j] + " appears " + k + " time/s.");
+		try (Scanner keyboard = new Scanner(System.in)){
+			System.out.println("How many numbers contains array?");
+			int numbers = keyboard.nextInt();
+			
+			arr =new int[numbers];
+			
+			for (int i= 0; i < numbers; i++) {			
+			System.out.println("The element " + i + " is= ");
+			arr[i] = keyboard.nextInt();
 			}
-			System.out.println("The element " + arr[j] + " appears " + k + " time/s.");
 		}
 		
-	}
+		try (Scanner keyboard = new Scanner(System.in)) {
+			System.out.println("enter an integer");
+			int position = keyboard.nextInt();
 
-	
+			if (arr.length < position) {
+				System.out.println("No data at provided position " + position);
+			} else {
+				int k = 0;
+				for (int i = 0; i < arr.length; i++) {
+
+					if (arr[position] == arr[i])
+						k += 1;
+				}
+				System.out.println("The element " + arr[position] + " appears " + k + " time/s.");
+			}
+		}	
+	}
 	
 }
