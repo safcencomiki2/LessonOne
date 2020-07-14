@@ -24,4 +24,6 @@ hs_err_pid*
 
 #ignore project file
 *.project
+.idea/
+*.iml
 
