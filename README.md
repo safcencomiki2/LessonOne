@@ -72,6 +72,7 @@ public class Onee {
 		}
 	}
 	
+	
 //Read  a matrix from the keyboard.
 	public static void matrix() {
 		try (Scanner keyboard = new Scanner(System.in)) {
@@ -102,6 +103,7 @@ public class Onee {
 		}	
 	}
 	
+	
 //	Use the Random class to generate elements for a matrix for which you read the length and height from the keyboard
 	public static void matrixRandom() {		
 		try (Scanner keyboard = new Scanner(System.in)) {
@@ -131,10 +133,12 @@ public class Onee {
 		}	
 	}
 	
+	
 // For two given matrices implement: matrix addition, matrix scalar multiplication and matrix multiplication 	
 	public static void matrixAddition() {
 		
 	}
+	
 	
 // Generate a random array of numbers and search for a specific one. If you find it then use a named break to exit the loop	
 	public static void arrayRandom() {
@@ -165,6 +169,4 @@ public class Onee {
 			}
 		}    
 	}
-	
-	
 }
