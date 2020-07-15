@@ -11,7 +11,6 @@ git pull	--- Fetches and merges changes on the remote server to your working dir
 
 git rebase	--- Reapply commits on top of another base tip 
 
+	
 
-Working       git add      Staging      git commit		
-Directory --------------->  Area    ---------------> Repository
-					git push
+Working Directory-------git add------->Staging Area------git commit + git push---------> Repository
