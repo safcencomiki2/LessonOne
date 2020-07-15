@@ -10,3 +10,8 @@ git push	--- Sends the committed changes of master branch to your remote reposit
 git pull	--- Fetches and merges changes on the remote server to your working directory.
 
 git rebase	--- Reapply commits on top of another base tip 
+
+
+Working       git add      Staging      git commit		
+Directory --------------->  Area    ---------------> Repository
+					git push
